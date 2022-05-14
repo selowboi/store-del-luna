@@ -1,0 +1,143 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    color: #f1ddbb;
+    width: 75%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 24px;
+}
+
+#slider-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content img {
+    width: 600px;
+}
+
+#slider{
+    width: 600px;
+    overflow:hidden;
+}
+
+#slides{
+    display: flex;
+    position: relative;
+}
+
+#slider-container button {
+    padding: 20px;
+    font-size: 24px;
+    color: #f1ddbb;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 10px;
+    text-align: center;
+    margin-right: -50px;
+    margin-left: -50px;
+    z-index: 1;
+}
+
+#slider-container button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        color: #f1ddbb;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    #slider{
+        width: 400px;
+        overflow:hidden;
+    }
+
+    .content img {
+        width: 400px;
+    }
+
+    .content-2 .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media p {
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        display: block;
+        margin-right: 0;
+        padding: 6px;
+        width: 50px;
+        margin: 20px auto;
+    }
+
+} 
+
+.btn {
+    border: 3px solid #f1ddbb;
+    width: 200px;
+    padding: 12px;
+    background: transparent;
+}
+
+.btn:hover, .btn a:hover {
+    color: white;
+    border-color: white;
+}
+
+.btn a {
+    font-size: 24px;
+}
+
+.content-2 {
+    display: flex;
+    flex-direction: column;
+    color: #f1ddbb;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+div.social-media div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.social-media div {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+div.social-media div p a:hover {
+    color: white;
+}

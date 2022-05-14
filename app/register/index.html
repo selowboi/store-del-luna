@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/logo-2.png">
+    <link rel="stylesheet" href="../../theme/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Register | Store Del Luna</title>
+</head>
+<body class="bg-space">
+    <div>
+        <header>
+            <div class="logo">
+                <a href="../home/index.html">
+                    <img src="../../img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <div class="icon">
+                    <button>
+                        <img src="../../img/dropdown.png" alt="" width="50px">
+                    </button>
+                </div>
+                <div class="dropdown-content">
+                    <span>
+                        <a href="../home/index.html" class="bold">Home</a>
+                    </span>
+                    <span>
+                        <a href="../album/index.html" class="bold">Album</a>
+                    </span>
+                    <span>
+                        <a href="../merchandise/index.html" class="bold">Merchandise</a>
+                    </span>
+                    <span>
+                        <a href="../testimonial/index.html" class="bold">Testimonial</a>
+                    </span>
+                    <span>
+                        <a href="../register/index.html" class="bold">Register</a>
+                    </span>
+                </div>
+            </div>
+        </header>
+       <div class="content">
+            <form action="../home/index.html" onsubmit="return validateForm()" method="POST">
+                <div class="container">
+                    <div class="header">
+                        <p class="title text-center"><span>Register</span></p>
+                        <p>
+                            <img src="../../img/logo.png" alt="" width="150px">
+                        </p>
+                    </div>
+                    <div class="form">
+                        <ul type="none">
+                            <li>
+                                <label class="label" for="fullname">Full Name</label>
+                                <p>
+                                    <input 
+                                    type="text"  
+                                    name="fullname" 
+                                    id="fullname" 
+                                    placeholder="MINIMUM 3 characters"
+                                    autocomplete="off">
+                                </p>
+                            </li>
+                            <li>
+                                <label class="label" for="username">Username</label>
+                                <p>
+                                    <input 
+                                    type="text"  
+                                    name="username" 
+                                    id="username" 
+                                    placeholder="MINIMUM 3 characters"
+                                    autocomplete="off">
+                                </p>
+                            </li>
+                            <li>
+                                <label class="label" for="email">Email</label>
+                                <p>
+                                    <input 
+                                    type="text" 
+                                    name="email" 
+                                    id="email" 
+                                    placeholder="email@address.com" 
+                                    autocomplete="off">
+                                </p>
+                            </li>
+                            <li>
+                                <label class="label" for="age">Age</label>
+                                <p>
+                                    <input 
+                                    type="number" 
+                                    name="age" 
+                                    id="age" 
+                                    placeholder="MINIMUM 17 years old" 
+                                    autocomplete="off">
+                                </p>
+                            </li>
+                            <li>
+                                <label class="label" for="gender" id="gender">Gender</label>
+                                <div class="form-group">
+                                    <span>
+                                        <input type="radio" name="gender" value="Male"> Male
+                                    </span>
+                                    <span>
+                                        <input type="radio" name="gender" value="Female"> Female
+                                    </span>
+                                    <span>
+                                        <input type="radio" name="gender" value="Other"> Other
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="label" for="address">Address</label>
+                                <p>
+                                    <textarea 
+                                    name="address"
+                                    id="address" 
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="MAXIMUM 255 characters"
+                                    autocomplete="off"></textarea>
+                                </p>
+                            </li>
+                            <li>
+                                <label class="label" for="password">Password</label>
+                                <p>
+                                    <input 
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    autocomplete="off"
+                                    placeholder="MINIMUM 6 characters">
+                                </p>
+                            </li>
+                            <li>
+                                <label class="label" for="confirm">Confirm Password</label>
+                                <p>
+                                    <input 
+                                    type="password" 
+                                    name="confirm" 
+                                    id="confirm-password" 
+                                    autocomplete="off"
+                                    placeholder="MINIMUM 6 characters">
+                                </p>
+                            </li>
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    id="terms"> Agree with terms and condition
+                            </li>
+                            <li>
+                                <p>
+                                    <button type="submit" class="btn" id="btn-register">Register</button>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>
+                &copy; 2013, Store Del Luna
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

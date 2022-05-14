@@ -1,0 +1,66 @@
+div.container {
+    width: 75%;
+    border-radius: 0.5%;
+    margin: auto;
+}
+
+div.container div.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.container div.header span {
+    padding-right: 30px;
+    border-right: 3px solid #f1ddbb;
+}
+
+div.container div.header img {
+    padding-left: 30px;
+}
+
+div.form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 75%;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+div.form ul li {
+    margin-bottom: 12px;
+}
+
+div.form ul li p 
+input, 
+textarea, 
+button{
+    width: 100%;
+    padding: 12px;
+    color: black;
+    box-sizing: border-box;
+}
+
+div.form ul li p 
+input, 
+textarea {
+    text-transform: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: #f1ddbb;
+    border: none;
+    font-weight: bold;
+    color: black;
+}
+
+.label {
+    font-size: 24px;
+}
